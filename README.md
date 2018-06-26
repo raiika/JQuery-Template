@@ -68,6 +68,7 @@ Syarat: menyediakan input:
 
 
 onFailed muncul modal dengan error (harus diisi sendiri di modal)
+
     @if ($errors->$errorBag->any())
 	<div class="alert alert-danger">
 		{!! implode('<br />', $errors->$errorBag->all()) !!}
