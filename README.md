@@ -84,3 +84,9 @@ Syarat: nama input dan data-nama harus sama -> contoh:
     
     <span data-action=”{{ route(‘example’) }}”>
     <button name=”action” formaction=”nanti-keisi”>
+    
+# Form Submit Once
+
+    <script type="text/javascript" src="/js/click-once.js"></script>
+    
+
