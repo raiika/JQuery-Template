@@ -73,7 +73,7 @@ onFailed muncul modal dengan error (harus diisi sendiri di modal)
     @if ($errors->$errorBag->any())
         <div class="alert alert-danger">
             {!! implode('<br />', $errors->$errorBag->all()) !!}
-	</div>
+        </div>
     @endif
 
 Dan inputan sesuai dengan old, beserta image nya berdasarkan data-image yg punya data-action yg sama seperti old('action').
