@@ -26,6 +26,7 @@ Bisa pake static atau object
 Cropper default cropperIdentifier nya “#image”
 
 Syarat: menyediakan input:
+
     <input id="x" type="hidden" name="x">
     <input id="y" type="hidden" name="y">
     <input id="w" type="hidden" name="w">
@@ -70,8 +71,8 @@ Syarat: menyediakan input:
 onFailed muncul modal dengan error (harus diisi sendiri di modal)
 
     @if ($errors->$errorBag->any())
-	<div class="alert alert-danger">
-		{!! implode('<br />', $errors->$errorBag->all()) !!}
+        <div class="alert alert-danger">
+            {!! implode('<br />', $errors->$errorBag->all()) !!}
 	</div>
     @endif
 
@@ -80,5 +81,6 @@ Dan inputan sesuai dengan old, beserta image nya berdasarkan data-image yg punya
 Modal ini pke button formaction
 
 Syarat: nama input dan data-nama harus sama -> contoh: 
+    
     <span data-action=”{{ route(‘example’) }}”>
     <button name=”action” formaction=”nanti-keisi”>
